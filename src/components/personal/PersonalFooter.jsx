@@ -10,10 +10,10 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
   return (
     <footer
       style={{
-        background: isDarkMode ? "#0D110F" : "var(--color-dark-forest)",
-        color: "var(--color-warm-cream)",
+        background: isDarkMode ? "#0A0912" : "#1A172E",
+        color: "#EDE9FE",
         padding: "var(--space-4xl) 0 var(--space-2xl) 0",
-        borderTop: `1px solid ${isDarkMode ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.1)"}`,
+        borderTop: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.1)" : "rgba(124, 58, 237, 0.2)"}`,
       }}
     >
       <div className="container-1440">
@@ -25,7 +25,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
             marginBottom: "var(--space-3xl)",
           }}
         >
-          {/* Brand & Designer Summary */}
+          {/* Brand & Developer Summary */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
               <div
@@ -33,7 +33,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
                   width: "36px",
                   height: "36px",
                   borderRadius: "10px",
-                  background: "var(--color-leaf-green)",
+                  background: "var(--color-purple-primary)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -42,17 +42,17 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
                   fontSize: "15px",
                 }}
               >
-                AP
+                AA
               </div>
               <div>
                 <strong style={{ fontSize: "18px", color: "#FFF" }}>{PERSONAL_INFO.name}</strong>
-                <div style={{ fontSize: "11px", color: "#A8BDB1" }}>{PERSONAL_INFO.title}</div>
+                <div style={{ fontSize: "11px", color: "#C4B5FD" }}>{PERSONAL_INFO.title}</div>
               </div>
             </div>
-            <p style={{ fontSize: "13px", color: "#A8BDB1", lineHeight: 1.6, maxWidth: "340px", margin: 0, marginBottom: "16px" }}>
+            <p style={{ fontSize: "13px", color: "#C4B5FD", lineHeight: 1.6, maxWidth: "340px", margin: 0, marginBottom: "16px" }}>
               Engineering scalable software applications, accessible full-stack systems, and intuitive user interfaces.
             </p>
-            <div style={{ fontSize: "12px", color: "#7B9485" }}>
+            <div style={{ fontSize: "12px", color: "#A78BFA" }}>
               📍 {PERSONAL_INFO.location}
             </div>
           </div>
@@ -63,13 +63,13 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
               Portfolio Sections
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "13px" }}>
-              <a href="#hero" style={{ color: "#A8BDB1", textDecoration: "none" }}>01. Home / Hero</a>
-              <a href="#about" style={{ color: "#A8BDB1", textDecoration: "none" }}>02. About Me</a>
-              <a href="#skills" style={{ color: "#A8BDB1", textDecoration: "none" }}>03. Technical Skills</a>
-              <a href="#projects" style={{ color: "#A8BDB1", textDecoration: "none" }}>04. Projects</a>
-              <a href="#education" style={{ color: "#A8BDB1", textDecoration: "none" }}>05. Education & Experience</a>
-              <a href="#achievements" style={{ color: "#A8BDB1", textDecoration: "none" }}>06. Achievements</a>
-              <a href="#contact" style={{ color: "#A8BDB1", textDecoration: "none" }}>07. Contact Me</a>
+              <a href="#hero" style={{ color: "#C4B5FD", textDecoration: "none" }}>01. Home / Hero</a>
+              <a href="#about" style={{ color: "#C4B5FD", textDecoration: "none" }}>02. About Me</a>
+              <a href="#skills" style={{ color: "#C4B5FD", textDecoration: "none" }}>03. Technical Skills</a>
+              <a href="#projects" style={{ color: "#C4B5FD", textDecoration: "none" }}>04. Projects</a>
+              <a href="#education" style={{ color: "#C4B5FD", textDecoration: "none" }}>05. Education & Experience</a>
+              <a href="#achievements" style={{ color: "#C4B5FD", textDecoration: "none" }}>06. Achievements</a>
+              <a href="#contact" style={{ color: "#C4B5FD", textDecoration: "none" }}>07. Contact Me</a>
             </div>
           </div>
 
@@ -78,20 +78,20 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
             <div style={{ fontSize: "12px", fontWeight: 700, color: "#FFF", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "12px" }}>
               Flagship Project
             </div>
-            <p style={{ fontSize: "12px", color: "#A8BDB1", lineHeight: 1.5, margin: "0 0 10px 0" }}>
+            <p style={{ fontSize: "12px", color: "#C4B5FD", lineHeight: 1.5, margin: "0 0 10px 0" }}>
               Explore the full 14-page master case study for FreshHarvest, complete with live road-distance delivery simulations.
             </p>
             <button
               onClick={onOpenCaseStudy}
               className="btn btn-outline btn-sm"
               style={{
-                background: "rgba(255,255,255,0.08)",
-                color: "#6EE7B7",
-                borderColor: "rgba(255,255,255,0.2)",
+                background: "rgba(124, 58, 237, 0.2)",
+                color: "#DDD6FE",
+                borderColor: "rgba(167, 139, 250, 0.3)",
                 gap: "6px",
               }}
             >
-              <Sparkles size={13} />
+              <Sparkles size={13} color="var(--color-purple-primary)" />
               <span>Open FreshHarvest (14 Pages)</span>
             </button>
           </div>
@@ -110,7 +110,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "8px",
-                  color: "#D3DECE",
+                  color: "#EDE9FE",
                   textDecoration: "none",
                 }}
               >
@@ -126,7 +126,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "8px",
-                  color: "#D3DECE",
+                  color: "#EDE9FE",
                   textDecoration: "none",
                 }}
               >
@@ -140,7 +140,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "8px",
-                  color: "#D3DECE",
+                  color: "#EDE9FE",
                   textDecoration: "none",
                 }}
               >
@@ -153,7 +153,7 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
         {/* Bottom Copyright & Back to Top */}
         <div
           style={{
-            borderTop: `1px solid ${isDarkMode ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.1)"}`,
+            borderTop: "1px solid rgba(167, 139, 250, 0.12)",
             paddingTop: "var(--space-lg)",
             display: "flex",
             justifyContent: "space-between",
@@ -161,18 +161,18 @@ export default function PersonalFooter({ onOpenCaseStudy, isDarkMode }) {
             flexWrap: "wrap",
             gap: "12px",
             fontSize: "12px",
-            color: "#7B9485",
+            color: "#A78BFA",
           }}
         >
           <div>
-            © {new Date().getFullYear()} {PERSONAL_INFO.name}. Built with React, Three.js, and human-centered design.
+            © {new Date().getFullYear()} {PERSONAL_INFO.name}. Built with React, Three.js, and clean code principles.
           </div>
 
           <button
             onClick={scrollToTop}
             className="btn btn-ghost btn-sm"
             style={{
-              color: "#A8BDB1",
+              color: "#C4B5FD",
               fontSize: "12px",
               gap: "4px",
               padding: "4px 8px",

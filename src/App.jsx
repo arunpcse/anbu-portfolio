@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import ThreeDLoader from "./components/3d/ThreeDLoader";
 import ThreeDBackground from "./components/3d/ThreeDBackground";
 
-// Personal Portfolio Components for Arun P. (7 Requested Sections)
+// Personal Portfolio Components for ANBARASAN A (7 Requested Sections)
 import PersonalNavbar from "./components/personal/PersonalNavbar";
 import PersonalHero from "./components/personal/PersonalHero";
 import PersonalAbout from "./components/personal/PersonalAbout";
@@ -72,7 +72,7 @@ export default function App() {
 
       {currentView === "portfolio" ? (
         /* ============================================================== */
-        /* ARUN P. — FULL-STACK DEVELOPER & UI/UX DESIGNER PORTFOLIO       */
+        /* ANBARASAN A — FULL-STACK DEVELOPER & UI/UX DESIGNER PORTFOLIO   */
         /* 7 STRUCTURED SECTIONS AS REQUESTED                             */
         /* ============================================================== */
         <div
@@ -129,26 +129,27 @@ export default function App() {
           className="freshharvest-case-study-view"
           style={{ position: "relative", zIndex: 1 }}
         >
-          {/* Sticky Return Bar back to Arun P. Portfolio */}
+          {/* Sticky Return Bar back to ANBARASAN A Portfolio */}
           <div
             style={{
               position: "sticky",
               top: 0,
               zIndex: 120,
-              background: "#1A372A",
+              background: "#1E1B2E",
               color: "#FFF",
               padding: "10px 24px",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
               boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
+              borderBottom: "1px solid rgba(167, 139, 250, 0.2)",
             }}
           >
             <button
               onClick={handleBackToPortfolio}
               className="btn"
               style={{
-                background: "#244C3A",
+                background: "var(--color-purple-primary)",
                 color: "#FFF",
                 border: "1px solid rgba(255,255,255,0.2)",
                 padding: "6px 14px",
@@ -162,7 +163,7 @@ export default function App() {
               }}
             >
               <ArrowLeft size={16} />
-              <span>← Back to Arun P. Personal Portfolio</span>
+              <span>← Back to ANBARASAN A Personal Portfolio</span>
             </button>
 
             <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "#D3DECE" }}>

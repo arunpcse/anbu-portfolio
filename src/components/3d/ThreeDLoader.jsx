@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { Sparkles, ArrowRight } from "lucide-react";
+import { PERSONAL_INFO } from "../../data/personalData";
 
 export default function ThreeDLoader({ onComplete, isDarkMode }) {
   const mountRef = useRef(null);
   const [progress, setProgress] = useState(0);
-  const [statusText, setStatusText] = useState("Initializing 3D Design Space...");
+  const [statusText, setStatusText] = useState("Initializing 3D Creative Space...");
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
@@ -19,13 +20,13 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
       setProgress(currentPct);
 
       if (currentPct < 30) {
-        setStatusText("Initializing 3D Design Space...");
+        setStatusText("Initializing 3D Creative Space...");
       } else if (currentPct < 65) {
         setStatusText("Loading Design Tokens & Typography...");
       } else if (currentPct < 90) {
-        setStatusText("Rendering High-Fidelity UI Systems...");
+        setStatusText("Compiling Developer Craft Systems...");
       } else {
-        setStatusText("Ready • Welcome to Arun's Portfolio");
+        setStatusText(`Ready • Welcome to ${PERSONAL_INFO.name}'s Portfolio`);
       }
 
       if (elapsed >= duration) {
@@ -59,21 +60,21 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // 3D Core Geometry: Outer Wireframe Icosahedron
+    // 3D Core Geometry: Outer Wireframe Icosahedron (Purple)
     const outerGeo = new THREE.IcosahedronGeometry(1.4, 1);
     const outerMat = new THREE.MeshBasicMaterial({
-      color: isDarkMode ? 0x6ee7b7 : 0x244c3a,
+      color: isDarkMode ? 0xa78bfa : 0x7c3aed,
       wireframe: true,
       transparent: true,
-      opacity: 0.6,
+      opacity: 0.65,
     });
     const outerMesh = new THREE.Mesh(outerGeo, outerMat);
     scene.add(outerMesh);
 
-    // 3D Inner Solid Faceted Core
+    // 3D Inner Solid Faceted Core (Deep Violet)
     const innerGeo = new THREE.OctahedronGeometry(0.85, 0);
     const innerMat = new THREE.MeshStandardMaterial({
-      color: isDarkMode ? 0x10b981 : 0xb56e43,
+      color: isDarkMode ? 0xc4b5fd : 0x6d28d9,
       metalness: 0.4,
       roughness: 0.2,
       flatShading: true,
@@ -95,9 +96,9 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
     particleGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     const particleMat = new THREE.PointsMaterial({
       size: 0.05,
-      color: isDarkMode ? 0x34d399 : 0x477a49,
+      color: isDarkMode ? 0xa78bfa : 0x7c3aed,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.85,
     });
     const particleRing = new THREE.Points(particleGeo, particleMat);
     scene.add(particleRing);
@@ -106,7 +107,7 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
     scene.add(ambientLight);
 
-    const pointLight = new THREE.PointLight(0xffffff, 1.5);
+    const pointLight = new THREE.PointLight(0xa78bfa, 2.0);
     pointLight.position.set(4, 5, 4);
     scene.add(pointLight);
 
@@ -160,8 +161,8 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
         bottom: 0,
         zIndex: 9999,
         background: isDarkMode
-          ? "radial-gradient(circle at center, #16201A 0%, #0D1210 100%)"
-          : "radial-gradient(circle at center, #FAF9F5 0%, #EFECE3 100%)",
+          ? "radial-gradient(circle at center, #181528 0%, #0E0C17 100%)"
+          : "radial-gradient(circle at center, #F8F9FD 0%, #EDE9FE 100%)",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -181,9 +182,9 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
           right: "24px",
           padding: "6px 14px",
           borderRadius: "var(--radius-full)",
-          background: isDarkMode ? "rgba(255, 255, 255, 0.08)" : "rgba(36, 76, 58, 0.08)",
-          color: isDarkMode ? "#D3DECE" : "var(--color-forest-green)",
-          border: `1px solid ${isDarkMode ? "rgba(255, 255, 255, 0.15)" : "rgba(36, 76, 58, 0.2)"}`,
+          background: isDarkMode ? "rgba(255, 255, 255, 0.08)" : "rgba(124, 58, 237, 0.08)",
+          color: isDarkMode ? "#EDE9FE" : "var(--color-purple-primary)",
+          border: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.25)" : "rgba(124, 58, 237, 0.2)"}`,
           fontSize: "12px",
           fontWeight: 600,
           cursor: "pointer",
@@ -207,27 +208,27 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
         }}
       />
 
-      {/* Designer Name & Brand Title */}
+      {/* Developer Name & Brand Title */}
       <div style={{ textAlign: "center", marginBottom: "24px" }}>
         <h2
           style={{
             fontSize: "26px",
             fontWeight: 800,
-            color: isDarkMode ? "#FFFFFF" : "var(--color-forest-green)",
+            color: isDarkMode ? "#FFFFFF" : "#1E1B2E",
             letterSpacing: "-0.02em",
             marginBottom: "4px",
           }}
         >
-          Arun P.
+          {PERSONAL_INFO.name}
         </h2>
         <div
           style={{
             fontSize: "13px",
-            color: isDarkMode ? "#9CB3A5" : "var(--color-muted-text)",
-            fontWeight: 500,
+            color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)",
+            fontWeight: 600,
           }}
         >
-          UI/UX & Product Design Portfolio
+          {PERSONAL_INFO.title}
         </div>
       </div>
 
@@ -245,7 +246,7 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
           style={{
             width: "100%",
             height: "4px",
-            background: isDarkMode ? "rgba(255, 255, 255, 0.1)" : "rgba(36, 76, 58, 0.15)",
+            background: isDarkMode ? "rgba(255, 255, 255, 0.1)" : "rgba(124, 58, 237, 0.15)",
             borderRadius: "999px",
             overflow: "hidden",
           }}
@@ -254,7 +255,7 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
             style={{
               height: "100%",
               width: `${progress}%`,
-              background: "linear-gradient(90deg, #244C3A, #477A49, #B56E43)",
+              background: "linear-gradient(90deg, #7C3AED, #A78BFA, #6D28D9)",
               transition: "width 0.1s linear",
             }}
           />
@@ -267,7 +268,7 @@ export default function ThreeDLoader({ onComplete, isDarkMode }) {
             justifyContent: "space-between",
             width: "100%",
             fontSize: "11px",
-            color: isDarkMode ? "#B0C4B8" : "var(--color-muted-text)",
+            color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)",
             fontWeight: 600,
           }}
         >

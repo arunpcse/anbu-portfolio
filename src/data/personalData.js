@@ -1,20 +1,21 @@
-// Arun P. — Full-Stack Developer & UI/UX Designer Portfolio Data
-// Tailored for an ambitious, highly skilled Software Engineer & UI/UX Designer (Fresher / Immediate Joiner)
+// ANBARASAN A — Full-Stack Developer & UI/UX Designer Portfolio Data
+// "4. Light Grey + Purple" Theme: Creative, Premium & Modern
 
 export const PERSONAL_INFO = {
-  name: "Arun P.",
+  name: "ANBARASAN A",
   title: "Full-Stack Developer & UI/UX Designer",
+  headline: "Crafting Clean Code, Creating Impact",
   subtitle: "Passionate software engineer and UI/UX designer crafting high-performance web applications, responsive user interfaces, and intelligent digital products. Eager to create real-world impact and innovate with forward-thinking engineering teams.",
   location: "Tamil Nadu, India • Open to Worldwide Remote & On-Site Roles",
-  email: "arun.p.developer@gmail.com",
+  email: "anbarasan.a.developer@gmail.com",
   phone: "+91 98765 43210",
   status: "Immediate Joiner • Open to Full-Stack Developer & UI/UX Roles",
-  avatar: "/assets/images/arun-real-photo.jpg",
+  avatar: null, // Profile image removed as explicitly requested
   resumeUrl: "#resume-download",
   socials: [
     { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
     { name: "GitHub", url: "https://github.com", icon: "Github" },
-    { name: "Email", url: "mailto:arun.p.developer@gmail.com", icon: "Mail" },
+    { name: "Email", url: "mailto:anbarasan.a.developer@gmail.com", icon: "Mail" },
   ],
   stats: [
     { label: "Core Projects", value: "4" },
@@ -55,7 +56,7 @@ export const FEATURED_PROJECTS = [
     role: "Full-Stack Developer & UI/UX Designer",
     timeline: "Flagship Capstone Project",
     thumbnail: "/assets/images/hero-produce.jpg",
-    accentColor: "#244C3A",
+    accentColor: "#7C3AED",
     tags: ["React.js", "Node.js", "Express", "MongoDB", "Figma", "REST API"],
     summary:
       "A 5-sided agricultural ecosystem connecting local farmers directly with retail consumers and restaurant bulk buyers through verified dawn harvest timestamps and equitable distance-based delivery logistics.",
@@ -82,7 +83,7 @@ export const FEATURED_PROJECTS = [
     role: "Full-Stack Developer & UI/UX Designer",
     timeline: "Major Project",
     thumbnail: "/assets/images/civicai-preview.jpg",
-    accentColor: "#059669",
+    accentColor: "#6D28D9",
     tags: ["React.js", "Python", "FastAPI", "PostgreSQL", "AI Vision", "Tailwind CSS"],
     summary:
       "An intelligent civic platform empowering citizens to report infrastructure hazards (potholes, water leaks, streetlight failures) with automated AI priority classification, GPS geotagging, and real-time municipal resolution tracking.",
@@ -109,7 +110,7 @@ export const FEATURED_PROJECTS = [
     role: "Frontend Developer & UI/UX Designer",
     timeline: "Major Project",
     thumbnail: "/assets/images/lifesync-preview.jpg",
-    accentColor: "#6366F1",
+    accentColor: "#8B5CF6",
     tags: ["React.js", "Node.js", "Chart.js", "TensorFlow Lite", "Glassmorphism UI"],
     summary:
       "A predictive wellness assistant synchronizing personal daily schedules with biological circadian rhythms, heart rate variability (HRV) telemetry, and personalized AI rest recommendations.",
@@ -136,7 +137,7 @@ export const FEATURED_PROJECTS = [
     role: "Mobile App Developer & UI Designer",
     timeline: "Major Project",
     thumbnail: "/assets/images/flutter-banking-preview.jpg",
-    accentColor: "#0284C7",
+    accentColor: "#7C3AED",
     tags: ["Flutter", "Dart", "Firebase", "Local Auth (Biometrics)", "Provider"],
     summary:
       "A high-security, fluid mobile banking application featuring biometric fingerprint authentication, holographic multi-currency virtual debit cards, instant peer-to-peer transfers, and interactive spending breakdown analytics.",

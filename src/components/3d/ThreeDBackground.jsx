@@ -26,11 +26,11 @@ export default function ThreeDBackground({ isDarkMode }) {
     const mainGroup = new THREE.Group();
     scene.add(mainGroup);
 
-    // Color definitions based on active theme
-    const primaryColor = isDarkMode ? 0x10b981 : 0x244c3a;
-    const secondaryColor = isDarkMode ? 0xf59e0b : 0xb56e43;
-    const accentColor = isDarkMode ? 0x34d399 : 0x477a49;
-    const wireOpacity = isDarkMode ? 0.32 : 0.18;
+    // Color definitions based on Light Grey + Purple theme
+    const primaryColor = isDarkMode ? 0xa78bfa : 0x7c3aed;
+    const secondaryColor = isDarkMode ? 0xc4b5fd : 0x6d28d9;
+    const accentColor = isDarkMode ? 0x8b5cf6 : 0xa78bfa;
+    const wireOpacity = isDarkMode ? 0.35 : 0.22;
 
     // Shape 1: Floating Torus (Donut) in Upper Right
     const torusGeo = new THREE.TorusGeometry(2.4, 0.45, 16, 40);
@@ -96,7 +96,7 @@ export default function ThreeDBackground({ isDarkMode }) {
 
     const particleMat = new THREE.PointsMaterial({
       size: isDarkMode ? 0.08 : 0.06,
-      color: isDarkMode ? 0x6ee7b7 : 0x244c3a,
+      color: isDarkMode ? 0xa78bfa : 0x7c3aed,
       transparent: true,
       opacity: isDarkMode ? 0.45 : 0.25,
     });

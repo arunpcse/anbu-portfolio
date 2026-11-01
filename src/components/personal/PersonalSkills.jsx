@@ -25,7 +25,7 @@ export default function PersonalSkills({ isDarkMode }) {
       style={{
         paddingTop: "var(--space-4xl)",
         paddingBottom: "var(--space-4xl)",
-        borderTop: `1px solid ${isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)"}`,
+        borderTop: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.12)" : "var(--color-border-subtle)"}`,
       }}
     >
       <div className="container-1440">
@@ -33,14 +33,14 @@ export default function PersonalSkills({ isDarkMode }) {
         <div style={{ marginBottom: "var(--space-3xl)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "var(--space-xs)" }}>
             <span className="badge badge-forest">TECHNICAL ARSENAL</span>
-            <span style={{ fontSize: "13px", fontWeight: 600, color: isDarkMode ? "#9CB3A5" : "var(--color-muted-text)" }}>
+            <span style={{ fontSize: "13px", fontWeight: 600, color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)" }}>
               STACK & COMPETENCIES
             </span>
           </div>
           <h2
             style={{
               fontSize: "clamp(28px, 3.5vw, 44px)",
-              color: isDarkMode ? "#FFFFFF" : "var(--color-forest-green)",
+              color: isDarkMode ? "#FFFFFF" : "#1E1B2E",
               margin: "0 0 16px 0",
             }}
           >
@@ -50,7 +50,7 @@ export default function PersonalSkills({ isDarkMode }) {
             style={{
               maxWidth: "800px",
               fontSize: "17px",
-              color: isDarkMode ? "#B0C4B8" : "var(--color-muted-text)",
+              color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)",
               lineHeight: 1.6,
             }}
           >
@@ -75,8 +75,8 @@ export default function PersonalSkills({ isDarkMode }) {
                 style={{
                   padding: "var(--space-xl)",
                   borderRadius: "var(--radius-lg)",
-                  background: isDarkMode ? "#1A221E" : "var(--color-warm-ivory)",
-                  borderColor: isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)",
+                  background: isDarkMode ? "#181528" : "var(--color-warm-ivory)",
+                  borderColor: isDarkMode ? "rgba(167, 139, 250, 0.14)" : "var(--color-border-subtle)",
                   display: "flex",
                   flexDirection: "column",
                   transition: "transform 0.3s ease, border-color 0.3s ease",
@@ -89,27 +89,27 @@ export default function PersonalSkills({ isDarkMode }) {
                       width: "42px",
                       height: "42px",
                       borderRadius: "10px",
-                      background: isDarkMode ? "rgba(71, 122, 73, 0.25)" : "var(--color-soft-sage)",
+                      background: isDarkMode ? "rgba(124, 58, 237, 0.25)" : "var(--color-purple-soft)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      color: isDarkMode ? "#6EE7B7" : "var(--color-forest-green)",
+                      color: "var(--color-purple-primary)",
                     }}
                   >
                     <IconComponent size={20} />
                   </div>
                   <div>
-                    <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-terracotta)", letterSpacing: "0.04em" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-purple-primary)", letterSpacing: "0.04em" }}>
                       CATEGORY 0{idx + 1}
                     </span>
-                    <h3 style={{ fontSize: "18px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: 0 }}>
+                    <h3 style={{ fontSize: "18px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: 0 }}>
                       {skillGroup.category}
                     </h3>
                   </div>
                 </div>
 
                 {/* Short description */}
-                <p style={{ fontSize: "13px", color: isDarkMode ? "#9CB3A5" : "var(--color-muted-text)", lineHeight: 1.5, margin: "0 0 16px 0" }}>
+                <p style={{ fontSize: "13px", color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)", lineHeight: 1.5, margin: "0 0 16px 0" }}>
                   {skillGroup.description}
                 </p>
 
@@ -120,8 +120,8 @@ export default function PersonalSkills({ isDarkMode }) {
                       key={skill}
                       style={{
                         background: isDarkMode ? "rgba(255,255,255,0.05)" : "var(--color-white)",
-                        color: isDarkMode ? "#E0EADF" : "var(--color-main-text)",
-                        border: `1px solid ${isDarkMode ? "rgba(255,255,255,0.1)" : "var(--color-border-subtle)"}`,
+                        color: isDarkMode ? "#EDE9FE" : "var(--color-main-text)",
+                        border: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.15)" : "var(--color-border-subtle)"}`,
                         padding: "8px 14px",
                         borderRadius: "var(--radius-md)",
                         fontSize: "13px",
@@ -132,15 +132,15 @@ export default function PersonalSkills({ isDarkMode }) {
                         transition: "all var(--transition-fast)",
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.borderColor = isDarkMode ? "#6EE7B7" : "var(--color-forest-green)";
+                        e.currentTarget.style.borderColor = "var(--color-purple-primary)";
                         e.currentTarget.style.transform = "translateY(-1px)";
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.borderColor = isDarkMode ? "rgba(255,255,255,0.1)" : "var(--color-border-subtle)";
+                        e.currentTarget.style.borderColor = isDarkMode ? "rgba(167, 139, 250, 0.15)" : "var(--color-border-subtle)";
                         e.currentTarget.style.transform = "translateY(0)";
                       }}
                     >
-                      <CheckCircle size={13} color={isDarkMode ? "#6EE7B7" : "var(--color-leaf-green)"} />
+                      <CheckCircle size={13} color="var(--color-purple-primary)" />
                       <span>{skill}</span>
                     </div>
                   ))}

@@ -29,10 +29,10 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
         top: 0,
         zIndex: 100,
         background: isDarkMode
-          ? "rgba(18, 22, 20, 0.94)"
-          : "rgba(248, 247, 241, 0.94)",
+          ? "rgba(14, 12, 23, 0.94)"
+          : "rgba(248, 249, 253, 0.94)",
         backdropFilter: "blur(14px)",
-        borderBottom: `1px solid ${isDarkMode ? "rgba(255, 255, 255, 0.08)" : "var(--color-border-subtle)"}`,
+        borderBottom: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.12)" : "var(--color-border-subtle)"}`,
         transition: "all var(--transition-fast)",
       }}
     >
@@ -46,7 +46,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
           gap: "var(--space-md)",
         }}
       >
-        {/* Brand & Designer Identity */}
+        {/* Brand & Developer Identity */}
         <a
           href="#"
           style={{
@@ -61,24 +61,24 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
               width: "40px",
               height: "40px",
               borderRadius: "12px",
-              background: "linear-gradient(135deg, #244C3A, #477A49)",
+              background: "linear-gradient(135deg, #7C3AED, #6D28D9)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               color: "#FFF",
               fontWeight: 800,
-              fontSize: "17px",
-              boxShadow: "0 4px 12px rgba(36, 76, 58, 0.25)",
+              fontSize: "16px",
+              boxShadow: "0 4px 14px rgba(124, 58, 237, 0.35)",
             }}
           >
-            AP
+            AA
           </div>
           <div>
             <div
               style={{
                 fontSize: "17px",
                 fontWeight: 800,
-                color: isDarkMode ? "#F8F7F1" : "var(--color-forest-green)",
+                color: isDarkMode ? "#F8F7F1" : "#1E1B2E",
                 lineHeight: 1.2,
                 letterSpacing: "-0.02em",
               }}
@@ -88,7 +88,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
             <div
               style={{
                 fontSize: "11px",
-                color: isDarkMode ? "#9CB3A5" : "var(--color-muted-text)",
+                color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)",
                 fontWeight: 600,
               }}
             >
@@ -114,7 +114,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
               style={{
                 fontSize: "12.5px",
                 fontWeight: 600,
-                color: isDarkMode ? "#D3DECE" : "var(--color-main-text)",
+                color: isDarkMode ? "#EDE9FE" : "var(--color-main-text)",
                 padding: "6px 10px",
                 borderRadius: "var(--radius-full)",
               }}
@@ -128,9 +128,9 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
             onClick={onOpenCaseStudy}
             className="btn btn-sm"
             style={{
-              background: isDarkMode ? "rgba(71, 122, 73, 0.2)" : "var(--color-soft-sage)",
-              color: isDarkMode ? "#6EE7B7" : "var(--color-forest-green)",
-              border: `1px solid ${isDarkMode ? "rgba(110, 231, 183, 0.3)" : "rgba(36, 76, 58, 0.2)"}`,
+              background: isDarkMode ? "rgba(124, 58, 237, 0.2)" : "var(--color-purple-soft)",
+              color: isDarkMode ? "#C4B5FD" : "var(--color-purple-primary)",
+              border: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.3)" : "var(--color-hover-border)"}`,
               fontSize: "12px",
               fontWeight: 700,
               gap: "6px",
@@ -140,7 +140,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
             }}
             title="Read 14-page master case study"
           >
-            <Sparkles size={13} color="var(--color-terracotta)" />
+            <Sparkles size={13} color="var(--color-purple-primary)" />
             <span>FreshHarvest (14 Pages)</span>
           </button>
         </nav>
@@ -156,16 +156,16 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
               height: "36px",
               padding: 0,
               borderRadius: "50%",
-              background: isDarkMode ? "#1E2622" : "var(--color-white)",
-              borderColor: isDarkMode ? "rgba(255, 255, 255, 0.15)" : "var(--color-border-subtle)",
-              color: isDarkMode ? "#FFD166" : "var(--color-forest-green)",
+              background: isDarkMode ? "#181528" : "var(--color-white)",
+              borderColor: isDarkMode ? "rgba(167, 139, 250, 0.25)" : "var(--color-border-subtle)",
+              color: isDarkMode ? "#FBBF24" : "var(--color-purple-primary)",
             }}
-            title={isDarkMode ? "Switch to Warm Cream Mode" : "Switch to Dark Mode"}
+            title={isDarkMode ? "Switch to Light Grey Mode" : "Switch to Dark Purple Mode"}
           >
             {isDarkMode ? <Sun size={16} /> : <Moon size={16} />}
           </button>
 
-          {/* Contact Me CTA */}
+          {/* Contact Me CTA (Purple) */}
           <a
             href="#contact"
             className="btn btn-primary btn-sm"
@@ -187,7 +187,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
             style={{
               display: "none",
               padding: "6px",
-              color: isDarkMode ? "#FFF" : "var(--color-forest-green)",
+              color: isDarkMode ? "#FFF" : "var(--color-purple-primary)",
             }}
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -199,9 +199,9 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
       {mobileMenuOpen && (
         <div
           style={{
-            background: isDarkMode ? "#1A221E" : "#FFF",
+            background: isDarkMode ? "#181528" : "#FFF",
             padding: "16px 24px",
-            borderBottom: `1px solid ${isDarkMode ? "rgba(255,255,255,0.1)" : "var(--color-border-subtle)"}`,
+            borderBottom: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.15)" : "var(--color-border-subtle)"}`,
             display: "flex",
             flexDirection: "column",
             gap: "12px",
@@ -213,7 +213,7 @@ export default function PersonalNavbar({ onOpenCaseStudy, isDarkMode, setIsDarkM
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
               style={{
-                color: isDarkMode ? "#FFF" : "var(--color-forest-green)",
+                color: isDarkMode ? "#FFF" : "#1E1B2E",
                 fontSize: "14px",
                 fontWeight: 600,
                 textDecoration: "none",

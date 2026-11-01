@@ -18,7 +18,7 @@ export default function PersonalAbout({ isDarkMode }) {
       style={{
         paddingTop: "var(--space-4xl)",
         paddingBottom: "var(--space-4xl)",
-        borderTop: `1px solid ${isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)"}`,
+        borderTop: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.12)" : "var(--color-border-subtle)"}`,
       }}
     >
       <div className="container-1440">
@@ -26,14 +26,14 @@ export default function PersonalAbout({ isDarkMode }) {
         <div style={{ marginBottom: "var(--space-3xl)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "var(--space-xs)" }}>
             <span className="badge badge-forest">ABOUT ME</span>
-            <span style={{ fontSize: "13px", fontWeight: 600, color: isDarkMode ? "#9CB3A5" : "var(--color-muted-text)" }}>
+            <span style={{ fontSize: "13px", fontWeight: 600, color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)" }}>
               BACKGROUND, INTERESTS & VISION
             </span>
           </div>
           <h2
             style={{
               fontSize: "clamp(28px, 3.5vw, 44px)",
-              color: isDarkMode ? "#FFFFFF" : "var(--color-forest-green)",
+              color: isDarkMode ? "#FFFFFF" : "#1E1B2E",
               margin: "0 0 16px 0",
             }}
           >
@@ -43,7 +43,7 @@ export default function PersonalAbout({ isDarkMode }) {
             style={{
               maxWidth: "800px",
               fontSize: "17px",
-              color: isDarkMode ? "#B0C4B8" : "var(--color-muted-text)",
+              color: isDarkMode ? "#C4B5FD" : "var(--color-muted-text)",
               lineHeight: 1.6,
             }}
           >
@@ -65,8 +65,8 @@ export default function PersonalAbout({ isDarkMode }) {
             style={{
               padding: "var(--space-xl)",
               borderRadius: "var(--radius-lg)",
-              background: isDarkMode ? "#1A221E" : "var(--color-warm-ivory)",
-              borderColor: isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)",
+              background: isDarkMode ? "#181528" : "var(--color-warm-ivory)",
+              borderColor: isDarkMode ? "rgba(167, 139, 250, 0.14)" : "var(--color-border-subtle)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -77,43 +77,43 @@ export default function PersonalAbout({ isDarkMode }) {
                   width: "42px",
                   height: "42px",
                   borderRadius: "10px",
-                  background: isDarkMode ? "rgba(71, 122, 73, 0.25)" : "var(--color-soft-sage)",
+                  background: isDarkMode ? "rgba(124, 58, 237, 0.25)" : "var(--color-purple-soft)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: isDarkMode ? "#6EE7B7" : "var(--color-forest-green)",
+                  color: "var(--color-purple-primary)",
                 }}
               >
                 <GraduationCap size={22} />
               </div>
               <div>
-                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-terracotta)", letterSpacing: "0.04em" }}>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-purple-primary)", letterSpacing: "0.04em" }}>
                   ACADEMIC FOUNDATION
                 </span>
-                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: 0 }}>
+                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: 0 }}>
                   Education & College
                 </h3>
               </div>
             </div>
 
             <div style={{ marginBottom: "12px" }}>
-              <h4 style={{ fontSize: "16px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: "0 0 4px 0" }}>
+              <h4 style={{ fontSize: "16px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: "0 0 4px 0" }}>
                 {ABOUT_DETAILS.education.degree}
               </h4>
-              <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--color-terracotta)", marginBottom: "4px" }}>
+              <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--color-purple-primary)", marginBottom: "4px" }}>
                 {ABOUT_DETAILS.education.college}
               </div>
               <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap", marginTop: "8px" }}>
                 <span className="badge badge-sage" style={{ fontSize: "12px" }}>
                   Batch: {ABOUT_DETAILS.education.period}
                 </span>
-                <span className="badge badge-forest" style={{ fontSize: "12px", background: "#2E7D32", color: "#FFF" }}>
+                <span className="badge badge-forest" style={{ fontSize: "12px", background: "var(--color-purple-primary)", color: "#FFF" }}>
                   CGPA: {ABOUT_DETAILS.education.cgpa}
                 </span>
               </div>
             </div>
 
-            <p style={{ fontSize: "14px", color: isDarkMode ? "#B0C4B8" : "var(--color-main-text)", lineHeight: 1.6, marginTop: "auto" }}>
+            <p style={{ fontSize: "14px", color: isDarkMode ? "#C4B5FD" : "var(--color-main-text)", lineHeight: 1.6, marginTop: "auto" }}>
               {ABOUT_DETAILS.education.description}
             </p>
           </div>
@@ -124,8 +124,8 @@ export default function PersonalAbout({ isDarkMode }) {
             style={{
               padding: "var(--space-xl)",
               borderRadius: "var(--radius-lg)",
-              background: isDarkMode ? "#1A221E" : "var(--color-warm-ivory)",
-              borderColor: isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)",
+              background: isDarkMode ? "#181528" : "var(--color-warm-ivory)",
+              borderColor: isDarkMode ? "rgba(167, 139, 250, 0.14)" : "var(--color-border-subtle)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -136,20 +136,20 @@ export default function PersonalAbout({ isDarkMode }) {
                   width: "42px",
                   height: "42px",
                   borderRadius: "10px",
-                  background: isDarkMode ? "rgba(181, 110, 67, 0.2)" : "rgba(181, 110, 67, 0.15)",
+                  background: isDarkMode ? "rgba(124, 58, 237, 0.2)" : "var(--color-purple-soft)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "var(--color-terracotta)",
+                  color: "var(--color-purple-primary)",
                 }}
               >
                 <Heart size={22} />
               </div>
               <div>
-                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-terracotta)", letterSpacing: "0.04em" }}>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-purple-primary)", letterSpacing: "0.04em" }}>
                   WHAT DRIVES ME
                 </span>
-                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: 0 }}>
+                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: 0 }}>
                   Technical Interests
                 </h3>
               </div>
@@ -166,11 +166,11 @@ export default function PersonalAbout({ isDarkMode }) {
                     background: isDarkMode ? "rgba(255,255,255,0.04)" : "#FFF",
                     padding: "10px 14px",
                     borderRadius: "var(--radius-md)",
-                    border: `1px solid ${isDarkMode ? "rgba(255,255,255,0.06)" : "var(--color-border-subtle)"}`,
+                    border: `1px solid ${isDarkMode ? "rgba(167, 139, 250, 0.12)" : "var(--color-border-subtle)"}`,
                   }}
                 >
-                  <CheckCircle size={16} color={isDarkMode ? "#6EE7B7" : "var(--color-leaf-green)"} style={{ marginTop: "2px", flexShrink: 0 }} />
-                  <span style={{ fontSize: "13px", color: isDarkMode ? "#E0EADF" : "var(--color-main-text)", fontWeight: 500 }}>
+                  <CheckCircle size={16} color="var(--color-purple-primary)" style={{ marginTop: "2px", flexShrink: 0 }} />
+                  <span style={{ fontSize: "13px", color: isDarkMode ? "#EDE9FE" : "var(--color-main-text)", fontWeight: 500 }}>
                     {interest}
                   </span>
                 </div>
@@ -184,8 +184,8 @@ export default function PersonalAbout({ isDarkMode }) {
             style={{
               padding: "var(--space-xl)",
               borderRadius: "var(--radius-lg)",
-              background: isDarkMode ? "#1A221E" : "var(--color-warm-ivory)",
-              borderColor: isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)",
+              background: isDarkMode ? "#181528" : "var(--color-warm-ivory)",
+              borderColor: isDarkMode ? "rgba(167, 139, 250, 0.14)" : "var(--color-border-subtle)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -196,38 +196,38 @@ export default function PersonalAbout({ isDarkMode }) {
                   width: "42px",
                   height: "42px",
                   borderRadius: "10px",
-                  background: isDarkMode ? "rgba(99, 102, 241, 0.2)" : "rgba(99, 102, 241, 0.15)",
+                  background: isDarkMode ? "rgba(124, 58, 237, 0.2)" : "var(--color-purple-soft)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#6366F1",
+                  color: "var(--color-purple-primary)",
                 }}
               >
                 <Target size={22} />
               </div>
               <div>
-                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-terracotta)", letterSpacing: "0.04em" }}>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-purple-primary)", letterSpacing: "0.04em" }}>
                   LONG-TERM ASPIRATIONS
                 </span>
-                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: 0 }}>
+                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: 0 }}>
                   Career Goals
                 </h3>
               </div>
             </div>
 
-            <p style={{ fontSize: "14px", color: isDarkMode ? "#B0C4B8" : "var(--color-main-text)", lineHeight: 1.7, marginBottom: "16px" }}>
+            <p style={{ fontSize: "14px", color: isDarkMode ? "#C4B5FD" : "var(--color-main-text)", lineHeight: 1.7, marginBottom: "16px" }}>
               {ABOUT_DETAILS.careerGoals}
             </p>
 
             <div
               style={{
                 marginTop: "auto",
-                background: isDarkMode ? "rgba(99, 102, 241, 0.1)" : "rgba(99, 102, 241, 0.08)",
+                background: isDarkMode ? "rgba(124, 58, 237, 0.15)" : "var(--color-purple-soft)",
                 padding: "12px 16px",
                 borderRadius: "var(--radius-md)",
-                border: "1px solid rgba(99, 102, 241, 0.2)",
+                border: "1px solid rgba(124, 58, 237, 0.25)",
                 fontSize: "13px",
-                color: isDarkMode ? "#A5B4FC" : "#4338CA",
+                color: isDarkMode ? "#C4B5FD" : "var(--color-purple-deep)",
                 display: "flex",
                 alignItems: "center",
                 gap: "8px",
@@ -244,8 +244,8 @@ export default function PersonalAbout({ isDarkMode }) {
             style={{
               padding: "var(--space-xl)",
               borderRadius: "var(--radius-lg)",
-              background: isDarkMode ? "#1A221E" : "var(--color-warm-ivory)",
-              borderColor: isDarkMode ? "rgba(255,255,255,0.08)" : "var(--color-border-subtle)",
+              background: isDarkMode ? "#181528" : "var(--color-warm-ivory)",
+              borderColor: isDarkMode ? "rgba(167, 139, 250, 0.14)" : "var(--color-border-subtle)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -256,38 +256,38 @@ export default function PersonalAbout({ isDarkMode }) {
                   width: "42px",
                   height: "42px",
                   borderRadius: "10px",
-                  background: isDarkMode ? "rgba(2, 132, 199, 0.2)" : "rgba(2, 132, 199, 0.15)",
+                  background: isDarkMode ? "rgba(124, 58, 237, 0.2)" : "var(--color-purple-soft)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#0284C7",
+                  color: "var(--color-purple-primary)",
                 }}
               >
                 <Compass size={22} />
               </div>
               <div>
-                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-terracotta)", letterSpacing: "0.04em" }}>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "var(--color-purple-primary)", letterSpacing: "0.04em" }}>
                   HOW IT ALL STARTED
                 </span>
-                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "var(--color-forest-green)", margin: 0 }}>
+                <h3 style={{ fontSize: "19px", color: isDarkMode ? "#FFF" : "#1E1B2E", margin: 0 }}>
                   Developer Journey
                 </h3>
               </div>
             </div>
 
-            <p style={{ fontSize: "14px", color: isDarkMode ? "#B0C4B8" : "var(--color-main-text)", lineHeight: 1.7, marginBottom: "16px" }}>
+            <p style={{ fontSize: "14px", color: isDarkMode ? "#C4B5FD" : "var(--color-main-text)", lineHeight: 1.7, marginBottom: "16px" }}>
               {ABOUT_DETAILS.developerJourney}
             </p>
 
             <div
               style={{
                 marginTop: "auto",
-                background: isDarkMode ? "rgba(71, 122, 73, 0.15)" : "var(--color-soft-sage)",
+                background: isDarkMode ? "rgba(124, 58, 237, 0.18)" : "var(--color-purple-soft)",
                 padding: "12px 16px",
                 borderRadius: "var(--radius-md)",
-                border: `1px solid ${isDarkMode ? "rgba(110, 231, 183, 0.2)" : "rgba(36, 76, 58, 0.15)"}`,
+                border: "1px solid rgba(124, 58, 237, 0.25)",
                 fontSize: "13px",
-                color: isDarkMode ? "#6EE7B7" : "var(--color-forest-green)",
+                color: isDarkMode ? "#DDD6FE" : "var(--color-purple-primary)",
                 fontWeight: 600,
                 display: "flex",
                 alignItems: "center",
