@@ -137,9 +137,9 @@ export default function PersonalAchievements({ isDarkMode }) {
 
                   <span
                     style={{
-                      fontSize: "18px",
+                      fontSize: "17px",
                       fontWeight: 800,
-                      fontFamily: "monospace",
+                      letterSpacing: "-0.01em",
                       color: isNationalTop10
                         ? "#F59E0B"
                         : (isDarkMode ? "#6EE7B7" : "var(--color-forest-green)"),
